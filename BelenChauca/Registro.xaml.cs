@@ -21,10 +21,10 @@ namespace BelenChauca
         private void btnCalcular_Clicked(object sender, EventArgs e)
         {
             double monto = Convert.ToDouble(txtMontoP.Text);
-            double costo = 3000;
+            double costo = 1800;
             double CuCosto = 0.05;
 
-            if (CuCosto > monto) 
+            if (costo > monto) 
             {
                 double resta = costo - monto;
                 double cuotas = resta / 5;
