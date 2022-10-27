@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BelenChauca.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="Blue" Padding="0" CornerRadius="0">
+                <Label Text="Resumen Registro" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+            </Frame>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Usuario conectado" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtUsuarioR" Keyboard="Text" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="Mostrar el nombre" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtNombreR" Keyboard="Text" Grid.Row="1" Grid.Column="1"/>
+
+                <Label Text="Total a Pagar" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtPagoSemestre" Keyboard="Numeric" Grid.Row="2" Grid.Column="1"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
